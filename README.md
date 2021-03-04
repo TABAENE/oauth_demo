@@ -11,6 +11,7 @@ http://127.0.0.1:8000/o/authorize/?response_type=code&client_id=eM9iQSn7iT1GjQOS
 http://127.0.0.1:8000/noexist/callback?code=lxZjgcWB2c3ZGYMXxoh804FP40FK9d
 
  - Now that you have the user authorization is time to get an access token:
+ 
 curl -X POST \
     -H "Cache-Control: no-cache" \
     -H "Content-Type: application/x-www-form-urlencoded" \
@@ -22,6 +23,7 @@ curl -X POST \
     -d "grant_type=authorization_code"
 
  - To access the user resources we just use the access_token:
+ 
 curl \
     -H "Authorization: Bearer xAgIQn9MbujwB0MOEUhrgtTHToAZt4" \
     -X GET http://localhost:8000/resource
