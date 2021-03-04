@@ -1,4 +1,4 @@
-# oauth_demo
+# REST - OAuth Demo
 
 ## Steps to get your token and use your API - 
 
